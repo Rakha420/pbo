@@ -149,9 +149,8 @@
             initDB() {
                 if (!localStorage.getItem(this.storageKey)) {
                     const users = [
-                        new User("admin", "123"),
+                        new User("admin", "admin"),
                         new User("user", "user123"),
-                        new User("user1", "123"),
                         new User("rakha", "rakha123")
                     ];
                     localStorage.setItem(this.storageKey, JSON.stringify(users));
